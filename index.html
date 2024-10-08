@@ -8,7 +8,7 @@
 <body>
     
     <label for="numerosVereadores">Quantos vereadores?</label>
-    <input type="number" name="numerosVereadores" id="numerosVereadores">
+    <input type="text" name="numerosVereadores" id="numerosVereadores">
     <input type="button" value="Em qual cidade estou?" id="button" onclick="clickButton()">
     <h1 id="cidade"></h1>
 
@@ -17,8 +17,12 @@
 <script>
 
     function clickButton(){
-        if(document.getElementById('numerosVereadores').value == '15')
+        if(document.getElementById('numerosVereadores').value == '15' || document.getElementById('numerosVereadores').value == 'quinze')
             document.getElementById('cidade').innerText = 'Você está em Brusque';
+        else if(document.getElementById('numerosVereadores').value == 'x = 9')
+            document.getElementById('cidade').innerText = 'cabence';
+        else if(document.getElementById('numerosVereadores').value == 'renata')
+            document.getElementById('cidade').innerText = 'deixa eu ver meu filho 400 conto de pensão ta foda to desempregado';
         else 
             document.getElementById('cidade').innerText = 'Você não está em Brusque';
     }
