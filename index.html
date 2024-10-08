@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="numerosVereadores">Quantos vereadores?</label>
+    <input type="number" name="numerosVereadores" id="numerosVereadores">
+    <input type="button" value="Em qual cidade estou?" id="button" onclick="clickButton()">
+    <h1 id="cidade"></h1>
+
+</body>
+
+<script>
+
+    function clickButton(){
+        if(document.getElementById('numerosVereadores').value == '15')
+            document.getElementById('cidade').innerText = 'Você está em Brusque';
+        else 
+            document.getElementById('cidade').innerText = 'Você não está em Brusque';
+    }
+
+</script>
+
+</html>
